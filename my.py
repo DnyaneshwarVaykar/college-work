@@ -1,3 +1,6 @@
+# Python code to play 21 Number game
+
+# returns the nearest multiple to 4
 def nearestMultiple(num):
 	if num >= 4:
 		near = num + (4 - (num % 4))
@@ -130,14 +133,13 @@ while game == True:
 		if ans =='Yes':
 			start1()
 		else:
-			print ("Do you want quit the game?(yes / no)")
+			print ("Do you want quit the game?(y / n)")
 			nex = input('> ')
-			if nex == "yes":
+			if nex == "y":
 				print ("You are quitting the game...")
 				exit(0)
-			elif nex == "no":
+			elif nex == "n":
 				print ("Continuing...")
 			else:
 				print ("Wrong choice")
 				
-
